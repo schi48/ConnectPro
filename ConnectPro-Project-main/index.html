@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <title>CONNECTPro - Homepage</title>
+</head>
+
+<body class="bg-gray-200">
+
+    <!-- Fontswesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+
+    <!-- Header component -->
+    <header class="text-gray-100 bg-gray-800 body-font shadow w-full">
+        <div class="container mx-auto flex bg-gradient-to-br from-fuchsia-500 to-purple-600 flex-wrap p-5 flex-col md:flex-row items-center">
+            <!-- Logo -->
+            <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center lg:items-center lg:justify-center mb-4 md:mb-0"> <img src="logo.png" style="height: 90px; margin-top: 10px; margin-bottom: 10px;" alt="logo" class="transform transition duration-500 hover:scale-150"> <span class="text-4xl font-light">CONNECT </span> <span class="text-3xl text-blue-400 font-extrabold">Pro</span> </a>
+            <!-- Navigation component -->
+            <nav class="flex lg:w-1/7 flex-wrap items-center text-base md:ml-auto"> 
+                <a class="border-blue-600 text-blue-400 mr-5 hover:text-gray-900 cursor-pointer border-b border-transparent hover:border-blue-600" href="./">Home</a> 
+                <a class="mr-5 hover:text-gray-900 cursor-pointer border-b border-transparent hover:border-blue-600" href="developers.html">Meet Us</a> 
+                <a class="mr-5 hover:text-gray-900 cursor-pointer border-b border-transparent hover:border-blue-600" href="about.html">Stakeholder Relations</a> 
+                <a class="hover:text-gray-900 cursor-pointer border-b border-transparent hover:border-blue-600" href="contactus.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container-->
+    <div class="flex flex-wrap overflow-hidden sm:-mx-4 md:-mx-2">
+        <div class="my-3 px-3 w-full overflow-hidden sm:my-3 sm:px-3 sm:w-full md:my-3 md:px-3 md:w-full lg:my-3 lg:px-3 lg:w-1/2 xl:my-3 xl:px-3 xl:w-1/2">
+
+            <!-- Column Content Animation-->
+            <section class="we-offer-area text-center bg-gray">
+                <div class="mr-auto lg:w-2/7 container">
+                    <div class="row our-offer-items less-carousel">
+                        <!-- Single Item -->
+                        <div class="transform transition duration-500 hover:scale-90 col-md-4 col-sm-6 equal-height">
+                            <div class="shadow-lg rounded-lg item">
+                                <h4 class="text-gray-800 text-3xl font-semibold">Send Text</h4>
+                                <p> The ability to write a text in advance and set it to send at a time of your liking! </p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="transform transition duration-500 hover:scale-90 col-md-4 col-sm-6 equal-height">
+                            <div class="shadow-lg rounded-lg item">
+                                <h4 class="text-gray-800 text-3xl font-semibold">Remind your loved ones</h4>
+                                <p> We allow our customers to send a reminder message to any number, great for reminding loved ones!</p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="transform transition duration-500 hover:scale-90 col-md-4 col-sm-6 equal-height">
+                            <div class="shadow-lg rounded-lg item">
+                                <h4 class="text-gray-800 text-3xl font-semibold">Interactive Reminders</h4>
+                                <p> Our facilitative design allows our customer to view exact countdown time, cancel a reminder & even come back to their reminder! </p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="transform transition duration-500 hover:scale-90 col-md-4 col-sm-6 equal-height">
+                            <div class="shadow-lg rounded-lg item">
+                                <h4 class="text-gray-800 text-3xl font-semibold">24/7 Support</h4>
+                                <p> Our team is always ready to help you solve any issues, our customers are very important to us! </p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="transform transition duration-500 hover:scale-90 my-3 px-3 w-full overflow-hidden sm:my-3 sm:px-3 sm:w-full md:my-3 md:px-3 md:w-full lg:my-3 lg:px-3 lg:w-1/2 xl:my-3 xl:px-3 xl:w-1/2">
+            
+            <!-- Form for application -->
+            <form name="formdata" action="send.php" method="POST" class="shadow-lg rounded-lg pb-20 object-right-top w-full  ml-auto max-w-3xl bg-white shadow p-8 text-gray-700 ">
+                <h2 class="w-full my-2 text-3xl font-bold leading-tight my-5">Send a reminder</h2>
+
+                <!-- name field -->
+                <div class="flex flex-wrap mb-3">
+                    <div class="relative w-full appearance-none label-floating">
+                        <input class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" id="myname" name="myname" type="text" placeholder="Your name..." required>
+                        <label for="myname" class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"> Your name </label>
+                    </div>
+                </div>
+
+                <!-- phone field -->
+                <div class="flex flex-wrap mb-3">
+                    <div class="relative w-full appearance-none label-floating">
+                        <input class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" type="tel" id="phone" name="phone" placeholder="Phone... 0123456789" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                        <label for="phone" class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"> Phone Number </label>
+                    </div>
+                </div>
+
+                <!-- Message field -->
+                <div class="flex flex-wrap mb-3">
+                    <div class="relative w-full appearance-none label-floating">
+                        <textarea class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" id="message" name="message" type="text" placeholder="Message..." required></textarea>
+                        <label for="message" class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text">Message... </label>
+                    </div>
+                </div>
+
+                <!-- Date field -->
+                <div class="flex flex-wrap mb-3">
+                    <div class="relative w-full appearance-none label-floating">
+                        <input class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" name="mytime" id="mytime" type="time" placeholder="Your desired time" required>
+                        <label for="mytime" class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"> Your email </label>
+                    </div>
+                </div>
+
+                <!-- Dropdown field -->
+                <div class="flex flex-wrap mb-3">
+                    <div class="relative w-full appearance-none label-floating">
+                        <select class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" id="extension" name="extension" required>
+                            <option value="" disabled selected>Select your carrier</option>
+                            <option>T-mobile</option>
+                            <option>AT&T</option>
+                            <option>Sprint</option>
+                            <option>Verizon Wireless</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Toggle API field -->
+                <style>
+                .toggle-checkbox:checked {
+                  @apply: right-0 border-green-400;
+                  right: 0;
+                  border-color: #68BBE3
+                }
+                .toggle-checkbox:checked + .toggle-label {
+                  @apply: bg-blue-400;
+                  background-color: #68BBE3
+                }
+                </style>               
+                <div class="relative inline-block py-2 w-16 mr-2 align-middle select-none transition duration-200 ease-in">
+                    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-8 h-8 rounded-full bg-white border-4 appearance-none cursor-pointer" onclick="checkToggle()">
+                    <label for="toggle" class="toggle-label block overflow-hidden h-8 rounded-full bg-gray-300 cursor-pointer"></label>
+                </div>
+                <label for="toggle" class="text-lg text-gray-600">Toggle Carrier</label>
+                <!-- Toggle API field End -->
+                <div class="">
+                    <button class="w-full shadow bg-gray-800 hover:bg-blue-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit" id="submit" name="SubmitButton" onclick="setCookie()"> Send </button>
+                </div>
+            </form>
+
+            <!-- End Form for application -->
+        </div>
+    </div>
+    
+    <script>
+        function checkToggle() {
+            if(document.getElementById("toggle").checked){
+                document.getElementById('extension').style.display='none';
+                document.getElementById("extension").required = false;
+            }else{
+                document.getElementById('extension').style.display='block';
+                document.getElementById("extension").required = true;
+            }
+        }
+
+        function readCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }
+            return null;
+        }
+
+        if(document.cookie != null){
+            document.querySelector("#myname").value = readCookie('name');
+            document.querySelector("#phone").value = readCookie('phone');
+            document.querySelector("#message").value = readCookie('message');
+            document.querySelector("#mytime").value = readCookie('time');
+            document.querySelector("#submit").click();
+        }
+
+        function setCookie() {
+            // read in the input
+            var name = document.getElementById('myname').value;
+            var phone = document.getElementById('phone').value;
+            var message = document.getElementById('message').value;
+            var time = document.getElementById('mytime').value;
+
+            // create a new Date object containing the current date time
+            var today  = new Date();
+            
+            // add the input time to the current date time
+            var myDate = today.toLocaleDateString("en-US") + " " + time;
+
+            // create a new Date object containing the expiration date time 
+            var totalDate = new Date(myDate);
+
+            // set the expiration date time
+            var expire = "expires=" + totalDate.toUTCString();
+
+            // create the cookie as a string of all input
+            document.cookie = "name=" + name + ";" + expire + ";path=/";
+            document.cookie = "phone=" + phone + ";" + expire + ";path=/";
+            document.cookie = "message=" + message + ";" + expire + ";path=/";
+            document.cookie = "time=" + time + ";" + expire + ";path=/";
+        }
+    </script>
+
+    <!-- Cookies Pop-up -->
+    <div id="cookiesBox" class="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none bg-gray-900 bg-opacity-75 px-10 " style="display: none;">
+        <div class="shadow-lg rounded-lg flex flex-col p-8 bg-gray-800 shadow-md hover:shodow-lg rounded-2xl">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="rounded-lg lg:w-16 lg:h-16 rounded-2xl lg:p-3 sm:w-0 sm:h-0 sm:p-0 border border-gray-800 text-blue-400 bg-gray-900" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-medium leading-none text-gray-100">Cookie Policy</div>
+                        <p class="text-sm text-gray-500 leading-none mt-1">We use cookies to improve user experience. By clicking “Okay“ or by remaining on our website, you agree to our website's cookie use.
+
+                        </p>
+                    </div>
+                </div>
+                <button class="flex-no-shrink bg-blue-500 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-blue-600 text-white rounded-full" onclick="document.getElementById('cookiesBox').style.display='none'">Okay</button>
+            </div>
+        </div>
+    </div>
+    <!-- Cookies Pop-up End-->
+
+    <!-- Footer component -->
+    <div class="bg-gray-800 text-white py-3 px-4 text-center fixed left-0 bottom-0 right-0 z-40"> Copyright © 2021 All Rights Reserved - CONNECTPro <a class="underline text-gray-200" onclick="document.getElementById('cookiesBox').style.display='flex'" >Cookie Policy</a> </div>
+</body>
+
+</html>

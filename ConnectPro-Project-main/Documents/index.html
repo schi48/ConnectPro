@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <title>CONNECTPro - Homepage</title>
+</head>
+
+<body class="bg-gray-200">
+
+    <!-- Fontswesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+
+    <!-- Header component -->
+    <header class="text-gray-100 bg-gray-800 body-font shadow w-full">
+        <div class="container mx-auto flex bg-gradient-to-br from-fuchsia-500 to-purple-600 flex-wrap p-5 flex-col md:flex-row items-center">
+            <!-- Logo -->
+            <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center lg:items-center lg:justify-center mb-4 md:mb-0"> <img src="logo.png" style="height: 90px; margin-top: 10px; margin-bottom: 10px;" alt="logo"> <span class="text-4xl font-light">CONNECT </span> <span class="text-3xl text-blue-400 font-extrabold">Pro</span> </a>
+            <!-- Navigation component -->
+            <nav class="flex lg:w-1/7 flex-wrap items-center text-base md:ml-auto"> <a class="mr-5 hover:text-gray-900 cursor-pointer border-b border-transparent hover:border-blue-600" href="index.html">About</a> <a class="mr-5 hover:text-gray-900 cursor-pointer border-b border-transparent hover:border-blue-600" href="contact.html">Services</a> <a class="mr-5 hover:text-gray-900 cursor-pointer border-b border-transparent hover:border-blue-600" href="index.html">Stakeholder Relations</a> <a class="hover:text-gray-900 cursor-pointer border-b border-transparent hover:border-blue-600" href="index.html">Contact</a> </nav>
+        </div>
+    </header>
+
+    <!-- Main Container-->
+    <div class="flex flex-wrap overflow-hidden sm:-mx-4 md:-mx-2">
+        <div class="my-3 px-3 w-full overflow-hidden sm:my-3 sm:px-3 sm:w-full md:my-3 md:px-3 md:w-full lg:my-3 lg:px-3 lg:w-1/2 xl:my-3 xl:px-3 xl:w-1/2">
+
+            <!-- Column Content Animation-->
+            <section class="we-offer-area text-center bg-gray">
+                <div class="mr-auto lg:w-2/7 container">
+                    <div class="row our-offer-items less-carousel">
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <h4>Set Text</h4>
+                                <p> The ability to write a text in advance and set it to send at a time of your liking! </p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <h4>Chat with your loved ones</h4>
+                                <p> We allow our customers to exchange text back and fourth with their loved ones just like any other texting platforms! </p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <h4>Calendar Reminder</h4>
+                                <p> Our "Set Text" ability also allows our customer to have it as a calendar reminder! </p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <h4>24/7 Support</h4>
+                                <p> Our team is always ready to help you solve any issues, our customers are very important to us! </p>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="my-3 px-3 w-full overflow-hidden sm:my-3 sm:px-3 sm:w-full md:my-3 md:px-3 md:w-full lg:my-3 lg:px-3 lg:w-1/2 xl:my-3 xl:px-3 xl:w-1/2">
+            
+            <!-- Form for application -->
+            <form name="formdata" action="send.php" method="POST" class="pb-20 object-right-top w-full  ml-auto max-w-3xl bg-white shadow p-8 text-gray-700 ">
+                <h2 class="w-full my-2 text-3xl font-bold leading-tight my-5">Send a reminder</h2>
+
+                <!-- name field -->
+                <div class="flex flex-wrap mb-6">
+                    <div class="relative w-full appearance-none label-floating">
+                        <input class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Your name..." required>
+                        <label for="name" class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"> Your ename </label>
+                    </div>
+                </div>
+
+                <!-- email field -->
+                <div class="flex flex-wrap mb-6">
+                    <div class="relative w-full appearance-none label-floating">
+                        <input class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" type="tel" id="phone" name="phone" placeholder="Phone... 0123456789" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                        <label for="name" class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"> Phone Number </label>
+                    </div>
+                </div>
+
+                <!-- Message field -->
+                <div class="flex flex-wrap mb-6">
+                    <div class="relative w-full appearance-none label-floating">
+                        <textarea class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" id="message" name="message" type="text" placeholder="Message..." required></textarea>
+                        <label for="message" class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text">Message... </label>
+                    </div>
+                </div>
+
+                <!-- Dropdown field -->
+                <div class="flex flex-wrap mb-6">
+                    <div class="relative w-full appearance-none label-floating">
+                        <select class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" id="extension" name="extension" required>
+                            <option value="" disabled selected>Choose a SMS Gateway Domain</option>
+                            <option>T-mobile</option>
+                            <option>AT&T</option>
+                            <option>Sprint</option>
+                            <option>Verizon Wireless</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Date field -->
+                <div class="flex flex-wrap mb-6">
+                    <div class="relative w-full appearance-none label-floating">
+                        <input class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" id="birthday" type="date" placeholder="Your email" required>
+                        <label for="birthday" class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"> Your email </label>
+                    </div>
+                </div>
+                <div class="">
+                    <button class="w-full shadow bg-gray-800 hover:bg-gray-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit" name="SubmitButton"> Send </button>
+                </div>
+            </form>
+            <!-- End Form for application -->
+        </div>
+    </div>
+    
+    <!-- Footer component -->
+    <div class="bg-gray-800 text-white py-3 px-4 text-center fixed left-0 bottom-0 right-0 z-40"> Copyright © 2021 All Rights Reserved - CONNECTPro <a class="underline text-gray-200" href="https://www.google.com">Privacy Policy</a> </div>
+</body>
+
+</html>
